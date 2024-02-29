@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "60wY9atHpuzEdO8YDOQ0XyTJs1gL/JkCCkRvZVF70ooQwSgYOLov3o5HRgGnzuRIblCyuROfFrVB6gENzihD1w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Geodesy\\source\\repos\\DubaProject\\DubaProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Geodesy\\.nuget\\packages\\aspose.gis\\23.12.0\\aspose.gis.23.12.0.nupkg.sha512",
+    "C:\\Users\\Geodesy\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649\\bitmiracle.libtiff.net.2.4.649.nupkg.sha512",
+    "C:\\Users\\Geodesy\\.nuget\\packages\\esri.arcgisruntime\\200.3.0\\esri.arcgisruntime.200.3.0.nupkg.sha512",
+    "C:\\Users\\Geodesy\\.nuget\\packages\\esri.arcgisruntime.runtimes.win\\200.3.0\\esri.arcgisruntime.runtimes.win.200.3.0.nupkg.sha512",
+    "C:\\Users\\Geodesy\\.nuget\\packages\\esri.arcgisruntime.wpf\\200.3.0\\esri.arcgisruntime.wpf.200.3.0.nupkg.sha512",
+    "C:\\Users\\Geodesy\\.nuget\\packages\\unityengine\\1.0.0\\unityengine.1.0.0.nupkg.sha512",
+    "C:\\Users\\Geodesy\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'UnityEngine 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows10.0.19041'. This package may not be fully compatible with your project.",
+      "libraryId": "UnityEngine",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041"
+      ]
+    }
+  ]
+}

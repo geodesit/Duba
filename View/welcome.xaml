@@ -1,0 +1,57 @@
+﻿<Window x:Class="DubaProject.Welcome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DubaProject.ViewModel"
+        mc:Ignorable="d"
+        Title="welcome" Height="300" Width="400"
+        >
+    <Window.Resources>
+        <!-- Define a custom ControlTemplate for the button -->
+        <ControlTemplate x:Key="CustomButtonTemplate" TargetType="{x:Type Button}">
+            <!-- Use a Grid for layout -->
+            <Grid>
+                <!-- Background rectangle with gradient -->
+                <Rectangle  x:Name="BackgroundRect" RadiusX="6"  RadiusY="6">
+                    <Rectangle.Fill >
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Color="#40475D" Offset="0"/>
+                            <GradientStop Color="#40475D" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <!-- Content presenter to display button content -->
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <!-- Define triggers for button states -->
+            <ControlTemplate.Triggers>
+                <!-- Change background on mouse over -->
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter TargetName="BackgroundRect" Property="Fill">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Color="#40475D" Offset="0"/>
+                                <GradientStop Color="#4c5675" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <!-- Change background on button press -->
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter TargetName="BackgroundRect" Property="Fill">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Color="#40475D" Offset="0"/>
+                                <GradientStop Color="#4c5675" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Window.Resources>
+    <Grid>
+        <Button Template="{StaticResource CustomButtonTemplate}"  Foreground="White" Content="Select MMPK file" FontSize="15" HorizontalAlignment="Center" Height="32"  VerticalAlignment="Top" Width="196" Click="SelectMMPK_click" Margin="0,172,0,0"/>
+    </Grid>
+</Window>
